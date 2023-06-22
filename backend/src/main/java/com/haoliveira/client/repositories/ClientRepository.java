@@ -9,5 +9,4 @@ import com.haoliveira.client.entities.Client;
 @Repository
 public interface ClientRepository extends JpaRepository<Client, Long>{
 
-	
 }
