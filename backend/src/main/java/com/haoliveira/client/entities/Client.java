@@ -3,6 +3,7 @@ package com.haoliveira.client.entities;
 import java.io.Serializable;
 import java.time.Instant;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -22,6 +23,7 @@ public class Client implements Serializable{
 	private String name;
 	private String cpf;
 	private Double income;
+	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant birthDate;
 	private Integer children;
 
@@ -109,8 +111,6 @@ public class Client implements Serializable{
 			return false;
 		return true;
 	}
-	
-	
 	
 	
 }
